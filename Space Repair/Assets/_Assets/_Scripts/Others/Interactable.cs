@@ -8,7 +8,7 @@ namespace SpaceRepair {
 
 
         
-        public virtual void Repair() {
+        public virtual void Interact() {
             
         }
     }

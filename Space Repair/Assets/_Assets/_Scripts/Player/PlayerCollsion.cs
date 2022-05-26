@@ -8,7 +8,7 @@ namespace SpaceRepair {
 
         private void OnTriggerEnter(Collider coli){
             if(coli.TryGetComponent<IReparable>(out IReparable reparable)){
-                reparable.Repair();
+                reparable.Interact();
             }
         }
         

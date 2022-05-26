@@ -19,10 +19,11 @@ namespace SpaceRepair{
                 yield return StartCoroutine(EffectRoutine());
             }
         }
-        public override void Repair(){
+        public override void Interact(){
             fixedPipe.SetActive(true);
             borkenPipe.SetActive(false);
             isReparied = true;
+            LevelManager.current.OnDamageReparing();
             StopCoroutine(EffectRoutine());
         }
         

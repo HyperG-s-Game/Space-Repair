@@ -12,7 +12,9 @@ namespace SpaceRepair {
         }
         private void OnTriggerEnter(Collider coli){
             if(coli.TryGetComponent<PlayerController>(out PlayerController playerController)){
-                ToggleDoors(true);
+                if(LevelManager.current.IsLevelComplete()){
+                    ToggleDoors(true);
+                }
             }
         }
         public void ToggleDoors(bool value){

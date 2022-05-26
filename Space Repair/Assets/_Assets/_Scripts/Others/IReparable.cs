@@ -4,6 +4,6 @@ using System.Collections.Generic;
 
 public interface IReparable {
     
-    void Repair();
+    void Interact();
     
 }
